@@ -2,7 +2,8 @@
 
 _Last updated: May 4, 2020 (by Aivant)_
 
-For the peoplepower-web repo, go to: https://github.com/calblueprint/peoplepower-web
+- For the peoplepower-web repo, go to: https://github.com/calblueprint/peoplepower-web
+- For complete documentation, go to https://github.com/calblueprint/peoplepower-web/wiki
 
 This repo is the home for any and all server-side code and scripts that are written for Blueprint's People Power Solar Cooperative Project
 
@@ -49,3 +50,7 @@ openssl rsa -in jwt.key -pubout -outform PEM -out jwt.key.pub
 After running these commands, the private key will be in `jwt.key` and public key will be in `jwt.key.pub`
 
 Note: regenerating the keys will invalidate all sessions
+
+
+## Misc.
+- This project was first worked on by @aivantg, @ashleynguyen27, @cindyzhang12, @dfangshuo, @iris-hou, @niwong, @arpanpal, @ethanlee16 of @calblueprint. For questions, see [Acknowledgements/Knowledge Owners](https://github.com/calblueprint/peoplepower-web/wiki/Acknowledgements)
