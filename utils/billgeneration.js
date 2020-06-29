@@ -13,7 +13,7 @@ import { getEnphaseDataForSubscriber } from './enphase';
 
 import sendEmail from './email';
 import EmailGenerators from './emailCopy';
-import getLatestPGEBill from './utilityApi';
+import {getLatestPGEBill} from './utilityApi';
 import generatePdfForSubscriber from './pdfgeneration';
 
 dotenv.config();
