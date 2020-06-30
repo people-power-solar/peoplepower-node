@@ -11,7 +11,7 @@ import {
   getOwnerById
 } from '../airtable/request';
 import Constants from '../Constants';
-import sendEmail from './email';
+import { sendEmail } from './email';
 import EmailGenerators from './emailCopy';
 import saveChartToFile from './charts/charts';
 import {
@@ -160,4 +160,4 @@ const generatePdfForSubscriber = async (
   }, Constants.PDF_DELETE_DELAY * 1000);
 };
 
-export default generatePdfForSubscriber;
+export {generatePdfForSubscriber};

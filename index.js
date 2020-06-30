@@ -7,9 +7,9 @@ import {
   approveSubscriberBill
 } from './utils/billgeneration';
 import { sendInviteEmail } from './utils/pledgeInvite';
-import generatePdfForSubscriber from './utils/pdfgeneration';
+import {generatePdfForSubscriber} from './utils/pdfgeneration';
 import EmailGenerators from './utils/emailCopy';
-import sendEmail from './utils/email';
+import { sendEmail } from './utils/email';
 import { getEnphaseDataForMonth } from './utils/enphase';
 import {
   getSolarProjectById,
@@ -28,9 +28,9 @@ const port = process.env.PORT || 3000;
 
 const apiKey = process.env.REACT_APP_AIRTABLE_API_KEY;
 /* eslint-disable no-new */
-/* 
+/*
   Airlock is @calblueprint's platform solution to authentication
-  and access control. It's an intermediate server between client apps 
+  and access control. It's an intermediate server between client apps
   and Airtable: https://www.npmjs.com/package/airlock-server
  */
 new Airlock({

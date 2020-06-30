@@ -26,9 +26,15 @@
   },
   "scripts": {
     "generate-schema": "generate-airtable-schema && pretty-quick",
-    "start": "babel-node index.js"
+    "start": "babel-node index.js",
+    "test": "mocha --require @babel/register --require babel-polyfill --recursive --file test/billGenerationTests.test.js"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.2.0",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.4.0",
@@ -38,8 +44,10 @@
     "eslint-plugin-react": "^7.18.3",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
+    "mocha": "^8.0.1",
     "prettier": "1.18.2",
-    "pretty-quick": "^2.0.0"
+    "pretty-quick": "^2.0.0",
+    "sinon": "^9.0.2"
   },
   "husky": {
     "hooks": {

@@ -64,7 +64,7 @@ const getPGECharges = latestBill => {
 };
 
 /*
-Your "Would-Be" Charges w/o Solar = PGE Delivery charges + EBCE Generation Charges + PCIA 
+Your "Would-Be" Charges w/o Solar = PGE Delivery charges + EBCE Generation Charges + PCIA
 PGE Delivery Charges -> MAX((consumption under the pge_details section) * 0.07217, (sum of all "Minimum Delivery Charge" cost line items under line_items))
 EBCE Generation -> (consumption under the pge_details section) * $0.13733
 PCIA -> (consumption under the pge_details section) * $0.03401
@@ -133,4 +133,4 @@ const getLatestPGEBill = async meterId => {
   };
 };
 
-export default getLatestPGEBill;
+export {getLatestPGEBill};
