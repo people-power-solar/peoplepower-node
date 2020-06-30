@@ -11,10 +11,10 @@ import {
 } from '../airtable/request';
 import { getEnphaseDataForSubscriber } from './enphase';
 
-import sendEmail from './email';
+import { sendEmail } from './email';
 import EmailGenerators from './emailCopy';
-import {getLatestPGEBill} from './utilityApi';
-import generatePdfForSubscriber from './pdfgeneration';
+import { getLatestPGEBill } from './utilityApi';
+import { generatePdfForSubscriber } from './pdfgeneration';
 
 dotenv.config();
 const {

@@ -1,7 +1,7 @@
 import { getPledgeInviteById } from '../airtable/request';
 import EmailGenerators from './emailCopy';
 import Constants from '../Constants';
-import sendEmail from './email';
+import { sendEmail } from './email';
 
 export const retrieveRecipientEmail = async inviteId => {
   const pledgeInvite = await getPledgeInviteById(inviteId);
